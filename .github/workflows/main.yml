@@ -21,7 +21,8 @@ jobs:
         docker build -t hello-docker .
     - name: docker run
       run: |
-        docker run hello-docker       
+        docker run hello-docker
+        print $DOCKER_USER
     - name: docker push
       run: |
         docker push hello-docker
