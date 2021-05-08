@@ -18,11 +18,11 @@ jobs:
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
     - name: docker build hello-docker
       run: |
-        docker build -t hello-docker .
+        docker build -t akshatgurnani/hello-docker .
     - name: docker run
       run: |
-        docker run hello-docker
+        docker run akshatgurnani/hello-docker
         print $DOCKER_USER
     - name: docker push
       run: |
-        docker push hello-docker
+        docker push akshatgurnani/hello-docker
