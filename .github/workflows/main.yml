@@ -22,7 +22,15 @@ jobs:
     - name: docker run
       run: |
         docker run akshatgurnani/hello-docker
-        print $DOCKER_USER
-    - name: docker push
+    
+    - name: docker change tag
       run: |
-        docker push akshatgurnani/hello-docker
+        docker tag akshatgurnani/hello-docker:latest docker.pkg.github.com/akshatgurnani/hello-docker/hello-docker:v1
+    
+    - name: docker push pkg
+      run: |
+        docker push docker.pkg.github.com/akshatgurnani/hello-docker/hello-docker:v1
+    
+#     - name: docker push
+#       run: |
+#         docker push akshatgurnani/hello-docker
