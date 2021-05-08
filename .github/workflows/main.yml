@@ -23,13 +23,13 @@ jobs:
       run: |
         docker run akshatgurnani/hello-docker
     
-    - name: docker change tag
-      run: |
-        docker tag akshatgurnani/hello-docker:latest docker.pkg.github.com/akshatgurnani/hello-docker/hello-docker:v1
+#     - name: docker change tag
+#       run: |
+#         docker tag akshatgurnani/hello-docker:latest docker.pkg.github.com/akshatgurnani/hello-docker/hello-docker:v1
     
-    - name: docker push pkg
-      run: |
-        docker push docker.pkg.github.com/akshatgurnani/hello-docker/hello-docker:v1
+#     - name: docker push pkg
+#       run: |
+#         docker push docker.pkg.github.com/akshatgurnani/hello-docker/hello-docker:v1
     
 #     - name: docker push
 #       run: |
