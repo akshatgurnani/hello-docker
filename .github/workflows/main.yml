@@ -19,6 +19,9 @@ jobs:
     - name: docker build hello-docker
       run: |
         docker build -t hello-docker .
+    - name: docker run
+      run: |
+        docker run hello-docker       
     - name: docker push
       run: |
         docker push hello-docker
