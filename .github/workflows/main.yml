@@ -19,9 +19,9 @@ jobs:
     - name: docker build hello-docker
       run: |
         docker build -t akshatgurnani/hello-docker .
-    - name: docker run
-      run: |
-        docker run akshatgurnani/hello-docker
+#     - name: docker run
+#       run: |
+#         docker run akshatgurnani/hello-docker
     
 #     - name: docker change tag
 #       run: |
@@ -31,6 +31,6 @@ jobs:
 #       run: |
 #         docker push docker.pkg.github.com/akshatgurnani/hello-docker/hello-docker:v1
     
-#     - name: docker push
-#       run: |
-#         docker push akshatgurnani/hello-docker
+    - name: docker push
+      run: |
+        docker push akshatgurnani/hello-docker
